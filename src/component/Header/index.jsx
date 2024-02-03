@@ -28,8 +28,9 @@ const Header = ({ data, updateData }) => {
   const deleteHandler = () => {
     const deleteConfirmation = window.confirm(
       "Are you sure !! you want to delete all items ??"
+      return;
     );
-    setInProgress(!inProgress);
+    //setInProgress(!inProgress);
     if (deleteConfirmation) {
       console.log("deleted");
       setInProgress(true);
